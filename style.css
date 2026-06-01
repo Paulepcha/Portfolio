@@ -261,7 +261,7 @@ section{
 
 .home-content p{
     color: var(--textColor);
-    font-size: var(--paraFont);
+    font-family: var(--paraFont);
     font-size: 2rem;
 }
 
