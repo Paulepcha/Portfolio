@@ -712,6 +712,7 @@ section{
     color: var(--textColor);
     border-bottom: 3px solid transparent;
     transition: 0.3s ease-in-out;
+    font-family: var(--headFont);
 }
 
 .footer ul li a:hover{
