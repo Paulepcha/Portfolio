@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <!-- FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Kotta+One&family=Potta+One&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- TYPED JS -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+</head>
+<body>
+
+    <!-- *************************  HEADER SECTION ************************* -->
+     
+    <header class="header">
+
+        <a href="#home" class="logo">Paul <span class="logo-span">Dev.</span></a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- *************************  CUSTOM CURSOR ************************* -->
+
+     <div class="cursor"></div>
+
+
+    <!-- *************************  HOME SECTION ************************* -->
+
+    <!-- <section class="home" id="home">
+
+        <div class="content-text">
+            <h3>Hi, Myself</h3>
+            <h1>Paul</h1>
+            <h3>And i'm <span class="homeContent-span"></span></h3>
+            <p>Building modern websites & visual identities from Sikkim.</p>
+
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+
+            <a href="img/mycv.pdf" download class="dwn-btn">Download CV</a>
+
+        </div>
+
+        <div class="content-img">
+            <img height="300px" src="img/meMain.png" alt="">
+        </div>
+    </section> -->
+
+    <section class="home" id="home">
+
+      <div class="home-content">
+        <h1>Hi, Myself <span class="color-span">Paul</span></h1>
+        <h3>I'm a <span class="home-typedJs"></span></h3>
+        <p>Building modern websites & visual identities from Sikkim.</p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+
+        <div class="btn-group">
+          <a href="#" class="hire-btn">Hire</a>
+          <a href="img/CV.pdf" class="hire-btn">Download CV</a>
+        </div>
+
+      </div>
+
+      <div class="home-img">
+        <img src="img/me.png" alt="Home-img">
+      </div>
+
+    </section>
+
+    <!-- *************************  ABOUT SECTION ************************* -->
+
+    <section class="about" id="about">
+
+        <div class="about-box1">
+            <img src="img/me.png" alt="aboutMe">
+        </div>
+        <div class="about-box2">
+
+        <div class="about-col-2">
+
+          <h1 class="sub-title"><span class="color-span">About</span> me</h1>
+
+          <p>I'm a creative designer and web developer passionate about building clean, modern, 
+          and user-friendly digital experiences. I enjoy combining design and technology 
+          to create visuals and websites that are both aesthetic and functional. <br>Skilled in 
+          graphic design, web development, and digital creativity, I’m constantly learning, improving, 
+          and exploring new ideas to grow as a designer and developer</p>
+
+          <div class="tab-titles">
+
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+
+              <li><span>UI/UX</span><br>Designing Web/App interfaces (FIgma)</li>
+              <li><span>Web Development</span><br>html, css, sass, javascript</li>
+              <li><span>Graphic Design</span><br>Adobe illustrator, Adobe Photoshop</li>
+              <li><span>Digital Marketing</span><br>Meta, SEO.</li>
+
+            </ul>
+          </div>
+
+             <div class="tab-contents" id="experience">
+            <ul>
+
+              <li><span>2026 - 3 Months</span><br>Resposible for editing and preparing bus flex designs based
+              on given requirements.Also managed and organized data using microsoft Excel, maintaining
+              records efficiently. Gained practical experice in attention to detail, time management,
+              and handling repetitive tasks and consistency</li>
+
+            </ul>
+          </div>
+
+             <div class="tab-contents" id="education">
+            <ul>
+
+              <li><span>2018</span><br>National Institute of Open Schooling (10th and 12th grade)</li>
+              <li><span>2018</span><br>Diploma in Computer Application(DCA) Aptech Gangtok Sikkim</li>
+              <li><span>2021-2022</span><br>Post Graduate Diploma in Computer Application (PGDCA)
+               Gyan Jyoti Institute Gangtok Sikkim</li>
+              <li><span>2024-2025</span><br>Graphics Web design, Development and Digital Marketing (GWDD) Arena Animation Institute Siliguri</li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        </div>
+        
+    </section>
+
+
+
+    <!-- *************************  SERVICES SECTION ************************* -->
+
+    <section>
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My <span class="color-span">Services</span></h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>I create responsive and modern websites with clean UI, smooth layouts, and user-friendly designs focused on performance and experience.</p>
+       
+            </div>
+
+             <div>
+              <i class="fa-solid fa-bezier-curve"></i>
+              <h2>Graphic Design</h2>
+              <p>I design creative visuals including posters, social media designs, banners, logos, and branding materials with modern aesthetics.</p>
+        
+            </div>
+
+             <div>
+              <i class="fa-brands fa-searchengin"></i>
+              <h2>Digital Marketing</h2>
+              <p>I help improve online presence through social media marketing, content strategy, branding, and audience engagement.</p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+</section>
+
+
+
+
+
+    <!-- *************************  PORTFOLIO SECTION ************************* -->
+
+    <section class="portfolio">
+
+    <div id="portfolio">
+              <div class="container">
+                <h1>My <span class="color-span">Projects</span></h1>
+                <div class="work-list">
+                  <div class="work">
+                    <img src="img/work1.jpg">
+                    <div class="layer">
+                      <h3>Web Design</h3>
+                      <p>Modern responsive website design with clean UI, smooth layout, and user-friendly experience.</p>
+                       <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                  </div>
+
+                   <div class="work">
+                    <img src="img/work2.jpg">
+                     <div class="layer">
+                      <h3>Graphic Design</h3>
+                      <p>Creative poster and branding design focused on modern visuals and strong composition.</p>
+                       <a href="graphic.html" target="_blank"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                  </div>
+
+                   <div class="work">
+                    <img src="img/work3.jpg">
+                     <div class="layer">
+                      <h3>Digital Marketing</h3>
+                      <p>Creative poster and branding design focused on modern visuals and strong composition.</p>
+                       <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                  </div>
+
+            </div>
+
+            </section>
+
+
+
+    <!-- *************************  CONTACT SECTION ************************* -->
+
+   <section class="contact" id="contact">
+    
+    <h1><span class="color-span">Contact</span> Me</h1>
+
+      <form action="" id="contact-form">
+        <div class="input-group">
+
+          <div class="input-box">
+            <input type="text" id="name" name="user_name" placeholder="Your Name">
+            <input type="email" id="email" name="user_email" placeholder="Your Email">
+          </div>
+
+          <div class="input-box">
+          <input type="number" id="number" name="user_number" placeholder="number">
+          </div>
+  
+        </div>
+
+        <div class="input-group-2">
+          <textarea name="user_message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <!-- <input type="submit" value="Send Message" class="formbtn"> -->
+         <button type="submit" class="formbtn">Send Message</button>
+        <p class="contact__message" id="contact-message"></p>
+        </div>
+
+        
+      </form>
+
+   </section>
+
+     <!-- *************************  FOOTER SECTION ************************* -->
+
+     <footer class="footer">
+
+      <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+
+        <ul class="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+        </ul>
+
+        <p class="copyright">
+          © Paul | All Rights Reserved
+        </p>
+
+     </footer>
+
+
+
+
+
+
+    <!-- JAVASCRIPT LINK -->
+
+    <script src="main.js"></script>
+    
+    <!-- -------Email JS--------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+Responsive Padding for paragraph 
+
+Padding: min(5rem, 8%);
+
+**********************************************************************************
+
+Responsive Img
+
+img {
+    max-width: 100%;  (so cannot be bigger then 100% of screen)
+    height: auto; (So it can resize on smaller devices)
+}
+
+define height and width of img for better.on html, to reserve space.
+
+**********************************************************************************
+
+What if we have to handle multiply images with different dimention.
+
+img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;  (A square)
+    aspect-ratio: 16 / 9;  (for smart phone and landscap)
+    aspect-ratio: 9 / 16;  (for smart phone and Portriot) (img will look stretch , so for that we use object-fit)
+    object-fit: cover; (it wont look stretch)
+}
+
+************************************************************************************
+
+height: 100vh;
+height: 100dvh; for better in responsive;
+
+************************************************************************************
+
+FOR Responsive Image gallery. without using flex or grid, 
+
+html code
+
+<div class = "layout-container">
+
+<img width = "400px" src= "" alt="">
+<img width = "400px" src= "" alt="">
+<img width = "400px" src= "" alt="">
+<img width = "400px" src= "" alt="">
+<img width = "400px" src= "" alt="">
+<img width = "400px" src= "" alt="">
+<img width = "400px" src= "" alt="">
+
+</div>
+
+css code.
+
+.laygout-container{
+    width: min(1000px, 100%); (Responsive width)
+    margin: 0 auto;  (Centers the Layout)
+    columns: 3 300px;  (3 is for how many columns you want, and 300px is minimum size you resume )
+    column-gap: 1rem; (it will control gaps between columns)
+}
+
+img{
+    display: block;
+    margin-bottom: 1rem; (Vertical gaps)
+    width: 100%; (Makes the images resize automatically)
+}
+
+************************************************************************************
+
+For image shadows 
+
+filter: drop-shadow(0 , 0, 0 rbga( 0, 0, 0, 0.1));

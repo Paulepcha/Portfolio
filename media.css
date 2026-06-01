@@ -1,0 +1,200 @@
+
+
+/* *************************** 1200 → desktop/laptop ****************** */
+
+
+
+@media (max-width: 1200px) {
+    #menu-icon {
+        display: block;
+        position: relative; /* Allows z-index to function */
+        z-index: 1000;      /* Keeps it above the navbar dropdown */
+    }
+
+    .navbar {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 60%;
+        padding: 3rem 3rem;
+        background: rgba(0, 0, 0, 0.9); /* Slightly darker for better readability */
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--mainColor);
+        border-bottom: 2px solid var(--mainColor);
+        display: none;
+        z-index: 999;       /* Sits below the menu icon but above content */
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 2.2rem;
+        margin: 4rem;
+        margin-top: 2rem;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    /* *************************** home SECTION ****************** */
+
+    .home{
+        flex-direction: column-reverse;
+        /* margin: 5rem 0; */
+        gap: 5rem;
+    }
+
+    .home-content{
+        align-items: center;
+        text-align: center;
+    }
+
+    .home-img img{
+        width: 35vw;
+    }
+
+}
+    
+
+
+/* *************************** 992  → small laptop/tablet ****************** */
+
+@media (max-width: 992px) {
+
+    .contact form{
+        flex-direction: column;
+    }
+  
+}
+
+/* *************************** 768  → tablet ****************** */
+
+@media (max-width: 768px) {
+
+    /* *************************** home SECTION ****************** */
+    /* .content-img img{
+        height: 700px;
+    }
+
+    .content-text p{
+        font-size: 2.4rem;
+    } */
+
+    /* *************************** ABOUT SECTION ****************** */
+
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .about-box1{
+        height: 100%;
+        width: 100%;
+    }
+
+    .about-box1 img{
+        width: 300px;
+        height: 400px;
+    }
+
+      .about-box2{
+        height: 100%;
+        width: 100%;
+      
+      }
+      .about-col-2{
+       height: 100%;
+       flex-basis: 100%;
+    }
+
+      .about-col-2 h1{
+        font-size: 3.5rem;
+      }
+
+}
+
+/* *************************** 576  → mobile ****************** */
+
+@media (max-width: 576px) {
+
+    /* *************************** HOME SECTION ****************** */
+
+    .home-img img{
+        width: 60vw;
+    }
+
+    .home-content h1{
+        font-size: 3rem;
+    }
+
+    .home-content h3{
+        font-size: 2rem;
+    }
+
+    /* *************************** ABOUT SECTION ****************** */
+
+    #about{
+        height: 100vh;
+        width: 100%;
+    }
+
+     .about-box1 img{
+        height: 250px;
+        width: 200px;
+     }
+
+    .about-col-2{
+       height: 55vh;
+       flex-basis: 100%;
+    }
+
+      .about-col-2 .sub-title{
+        font-size: 3rem;
+      }
+
+      .about-col-2 p{
+        font-size: 1.4rem;
+      }
+
+      .about-col-2 .tab-contents li{
+        font-size: 1.2rem;
+      }
+
+}
+
+
+@media (max-width: 376px) {
+
+    /* *************************** HOME SECTION ****************** */
+
+    .home-content h1 {
+        font-size: 3rem;
+    }
+
+    .hire-btn{
+       font-size: 2rem;
+       padding: 1rem;
+    }
+
+    /* *************************** ABOUT SECTION ****************** */
+
+     .about-col-2{
+       height: 55vh;
+       flex-basis: 100%;
+    }
+
+      .about-col-2 .sub-title{
+        font-size: 3rem;
+      }
+
+      .about-col-2 p{
+        font-size: 1rem;
+      }
+
+      .about-col-2 .tab-contents li{
+        font-size: 1.2rem;
+
+      }
+}

@@ -1,0 +1,111 @@
+// NAVBAR
+
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+   menuIcon.classList.toggle('fa-xmark')
+   menuIcon.classList.toggle('fa-bars');
+   navbar.classList.toggle('active')
+}
+
+
+// tYPED jS
+
+const typed = new Typed('.home-typedJs', {
+    strings: ['Graphic Designer', 'Web Designer', 'Digital Marketer'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});
+
+
+// ABOUT ME
+
+let tablinks = document.getElementsByClassName("tab-links");
+let tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+// CUSTOM CURSOR
+
+const cursor = document.querySelector('.cursor')
+let mouseX = 0, mouseY = 0 // Store mouse position
+
+const cursorMove = () => {
+    cursor.style.left = `${mouseX}px` // Horizontal position (X-axis)
+    cursor.style.top = `${mouseY}px`  // Vertical position (y-axis)
+    cursor.style.transform = 'translate(-50%, -50%)'  // Centers the element at the pointer
+
+    // Repeats mouse movement and updates positions
+    requestAnimationFrame(cursorMove)
+    }
+
+    // Detects mouse movement and updates positions
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX // Save postion X
+        mouseY = e.clientY
+    })
+
+    cursorMove()
+
+// HIDE THE CUSTOM CURSOR ON LINKS
+
+const a = document.querySelectorAll('a')
+
+a.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('hide-cursor')
+    })
+
+    item.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hide-cursor')
+    })
+
+})
+
+
+
+// Email js
+
+const contactForm = document.getElementById('contact-form')
+contactMessage = document.getElementById('contact-message')
+
+const sendEmail = async (e) => {
+    // Prevent the page from reloading
+    e.preventDefault()
+
+    try{
+        // serviceID - templateID - #form - publicKey
+        await emailjs.sendForm('service_ip9ikww','template_fy5dfaj','#contact-form','2ECPNff3i8it-nm5K')
+
+        // show message
+        contactMessage.textContent = 'Message sent successfully'
+
+        // clear input fields
+        contactForm.reset()
+    } catch (error){
+        // show error message
+        contactMessage.textContent = 'Message not sent (Service error)'
+    } finally {
+        // Remove Message after 5 seconds
+        setTimeout(() => contactMessage.textContent = '', 5000)
+    }
+}
+
+contactForm.addEventListener('submit', sendEmail)
+
+
