@@ -5,7 +5,16 @@
 
 
 @media (max-width: 1200px) {
+
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3rem;
+    }
+
     #menu-icon {
+        color: var(--mainColor);
+        margin-right: -5rem;
         display: block;
         position: relative; /* Allows z-index to function */
         z-index: 1000;      /* Keeps it above the navbar dropdown */
@@ -49,9 +58,43 @@
         text-align: center;
     }
 
-    .home-img img{
-        width: 35vw;
+    /* *************************** ABOUT SECTION ****************** */
+
+    .about{
+        flex-direction: column;
     }
+
+    .about-box1 img{
+       height: 600px;
+       width: 500px;
+    }
+
+    .about-box2{
+        height: 100%;
+    }
+
+    .about-col-2{
+        height: 100%;
+         height: 55vh;
+    }
+
+    .about-col-2 p{
+  font-size: 2rem;
+}
+ 
+ /* *************************** PORTFOLIO SECTION ****************** */
+
+
+  .portfolio{
+    min-height: 100%;
+  }
+
+   /* *************************** CONTACT SECTION ****************** */
+
+  .contact{
+    min-height: 100%;
+  }
+
 
 }
     
@@ -72,46 +115,95 @@
 @media (max-width: 768px) {
 
     /* *************************** home SECTION ****************** */
-    /* .content-img img{
-        height: 700px;
+     
+    .home{
+        display: flex;
+        justify-content: flex-start;
     }
 
-    .content-text p{
-        font-size: 2.4rem;
-    } */
+    .home-content{
+        margin-top: 6rem;
+    }
+
+    .home-img img{
+        height: 400px;
+        width: 400px;
+    }
 
     /* *************************** ABOUT SECTION ****************** */
 
 
     #about{
+        height: 100dvh;
         flex-direction: column;
-        height: 100vh;
-        width: 100%;
     }
 
-    .about-box1{
-        height: 100%;
+     .about-box1 {
         width: 100%;
-    }
+        height: 100%;
+     }
 
     .about-box1 img{
-        width: 300px;
-        height: 400px;
+        width: 260px;
+        height: 350px;
     }
 
       .about-box2{
-        height: 100%;
+        margin-top: 3rem;
         width: 100%;
       
       }
       .about-col-2{
-       height: 100%;
+       height: 55vh;
        flex-basis: 100%;
     }
+
+     .about-col-2 .sub-title{
+        font-size: 5rem;
+     }
+
+     .about-col-2 p{
+        font-size: 1.7rem;
+     }
+
+     .about-col-2 .tab-contents li span{
+        font-size: 2rem;
+     }
 
       .about-col-2 h1{
         font-size: 3.5rem;
       }
+
+          /* *************************** PORTFOLIO SECTION ****************** */
+
+       
+          .portfolio{
+            padding: 0;
+            min-height: 90vh;
+          }
+
+          #portfolio{
+            min-height: 100vh;
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+
+          .portfolio .container h1{
+            margin-left: 2rem;
+          }
+
+           /* *************************** CONTACT SECTION ****************** */
+
+           .contact{
+            min-height: 100vh;
+            padding: 0;
+           }
+           .contact h1{
+            margin-left: 4rem;
+           }
+
+           /* *************************** FOOTER SECTION ****************** */
+
 
 }
 
@@ -122,7 +214,8 @@
     /* *************************** HOME SECTION ****************** */
 
     .home-img img{
-        width: 60vw;
+        height: 350px;
+        width: 320px;;
     }
 
     .home-content h1{
@@ -136,13 +229,13 @@
     /* *************************** ABOUT SECTION ****************** */
 
     #about{
-        height: 100vh;
+        height: 100dvh;
         width: 100%;
     }
 
      .about-box1 img{
-        height: 250px;
-        width: 200px;
+        height: 350px;
+        width: 250px;
      }
 
     .about-col-2{
@@ -159,18 +252,46 @@
       }
 
       .about-col-2 .tab-contents li{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+      }
+
+       /* *************************** CONTACT SECTION ****************** */
+
+
+      .contact form{
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+
+      .contact h1{
+        padding-top: 2rem;
       }
 
 }
 
+@media (max-width: 465px){
+    .about-col-2 .tab-contents li{
+        font-size: 1.5rem;
+      }
+}
 
-@media (max-width: 376px) {
+
+@media (max-width: 401px) {
 
     /* *************************** HOME SECTION ****************** */
 
-    .home-content h1 {
+      .home-img img{
+        height: 300px;
+        width: 280px;;
+    }
+
+    .home-content h1{
         font-size: 3rem;
+    }
+
+    .home-content h3{
+        font-size: 2rem;
     }
 
     .hire-btn{
@@ -186,15 +307,35 @@
     }
 
       .about-col-2 .sub-title{
-        font-size: 3rem;
+        font-size: 4rem;
       }
 
       .about-col-2 p{
-        font-size: 1rem;
+        font-size: 1.3rem;
       }
 
       .about-col-2 .tab-contents li{
-        font-size: 1.2rem;
-
+        font-size: 1.3rem;
       }
+
+      .footer .list li a{
+        font-size: 1.4rem
+      }
+
+}
+
+
+@media (max-width: 376px){
+    #services .container h1{
+        font-size: 4rem;
+    }
+
+    .portfolio .container h1{
+        font-size: 4rem;
+    }
+
+    .contact h1{
+        font-size: 4rem;
+    }
+
 }
