@@ -301,8 +301,12 @@
 
     /* *************************** ABOUT SECTION ****************** */
 
+    .about-box1 img{
+        height: 340px;
+    }
+
      .about-col-2{
-       height: 55vh;
+       height: 60vh;
        flex-basis: 100%;
     }
 
@@ -326,6 +330,12 @@
 
 
 @media (max-width: 376px){
+
+
+    .services-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
     #services .container h1{
         font-size: 4rem;
     }
@@ -337,5 +347,6 @@
     .contact h1{
         font-size: 4rem;
     }
+
 
 }
