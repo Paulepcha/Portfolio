@@ -331,6 +331,28 @@
 
 @media (max-width: 376px){
 
+     .about-box1 img{
+        height: 200px;
+        width: 150px;
+    }
+
+     .about-col-2{
+       height: 60vh;
+       flex-basis: 100%;
+    }
+
+      .about-col-2 .sub-title{
+        font-size: 4rem;
+      }
+
+      .about-col-2 p{
+        font-size: 1.3rem;
+      }
+
+      .about-col-2 .tab-contents li{
+        font-size: 1.3rem;
+      }
+
 
     .services-list{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

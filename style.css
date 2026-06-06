@@ -737,6 +737,19 @@ section{
 
 /* ********************************** GRAPHIC SECTION ********************************** */
 
+.gallery-home{
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-home h1{
+    font-size: 5rem;
+    font-family: var(--headFont);
+    color: var(--textColor);
+}
+
 .gallery{
     width: 100%;
     display: flex;
