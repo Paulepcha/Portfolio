@@ -668,7 +668,7 @@ section{
     width: 100%;
     padding: 2.5rem;
     font-size: 1.8rem;
-    color: var(--textColor);
+    color: var(--mainColor);
     background-color: var(--bgColor);
     border-radius: 2rem;
     border: 2px solid var(--mainColor);
